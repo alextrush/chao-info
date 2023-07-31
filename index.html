@@ -13,18 +13,19 @@
 <body>
     <nav id="section-navbar">
         <img src="assets/jukebox/jukebox-logo-blue.png">
-        <ul>
-            <li><a href="#section-header" class="text-nav">Intro</a></li>
-            <li><a href="#section-about" class="text-nav">Chao</a></li>
-            <li><a href="#section-animal" class="text-nav">Animals</a></li>
-            <li><a href="#section-gallery" class="text-nav">Gallery</a></li> 
-            <li><a href="#section-footer" class="text-nav">Learn More</a></li>
-        </ul>
+        <p><a href="#section-header" class="text-nav">Intro</a></p>
+        <p><a href="#section-about" class="text-nav">Chao</a></p>
+        <p><a href="#section-animal" class="text-nav">Animals</a></p>
+        <p><a href="#section-gallery" class="text-nav">Gallery</a></p> 
+        <p><a href="#section-footer" class="text-nav">Learn More</a></p>
     </nav>
     <header id="section-header">
-        <h1 class="text-header">Boundless cuteness to create however you can imagine</h1>
-        <p class="text-header">Chao are customizable NPCs in the Sonic Adventure and Advance series which you can raise in virtual gardens</p>
-        <button class="button-main" href="https://www.youtube.com/watch?v=69zTLvF8ajc">Learn More</button>
+        <p></p>
+        <div id="section-header-content">
+            <h1 class="text-header">Boundless cuteness to create however you can imagine</h1>
+            <p class="text-header">Chao are customizable NPCs in the Sonic Adventure and Advance series which you can raise in virtual gardens</p>
+            <input type="button" class="button-main" onclick="window.open('https://www.youtube.com/watch?v=69zTLvF8ajc', '_blank')" value="Learn More">
+    </div>
     </header>
     <main id="section-about">
         <div id="about-cards">
@@ -140,7 +141,7 @@
     </section>
     <footer id="section-footer">
         <p class="text-footer">animal icons taken from <a href="https://chao-island.com/info-center/about-chao">chao island</a></p>
-        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/alextrush/chao-info"><i class="fa-brands fa-github"></i></a>
     </footer>
 </body>
 </html>
