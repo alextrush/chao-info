@@ -12,7 +12,6 @@
 </head>
 <body>
     <nav id="section-navbar">
-        <img src="assets/jukebox/jukebox-logo-blue.png">
         <p><a href="#section-header" class="text-nav">Intro</a></p>
         <p><a href="#section-about" class="text-nav">Chao</a></p>
         <p><a href="#section-animal" class="text-nav">Animals</a></p>
@@ -20,7 +19,6 @@
         <p><a href="#section-footer" class="text-nav">Learn More</a></p>
     </nav>
     <header id="section-header">
-        <p></p>
         <div id="section-header-content">
             <h1 class="text-header">Boundless cuteness to create however you can imagine</h1>
             <p class="text-header">Chao are customizable NPCs in the Sonic Adventure and Advance series which you can raise in virtual gardens</p>
@@ -75,49 +73,63 @@
     </main>
     <section id="section-animal">
         <h1 class="text-animal">Make Your Chao Go Wild</h1>
-        <h2 class="text-animal"><a href="https://chao-island.com/info-center/training-sa2/animal-locations">Animals found in Sonic levels can be brought into the chao gardens</a></h2>
-        <h2 class="text-animal"><a href="https://chao-island.com/info-center/training-sa2/animals">By playing with those animals, chao obtain various abilities and cosmetic changes</a></h2>
+        <div id="section-animal-info">
+            <h2 class="text-animal">Animals found in <a href="https://chao-island.com/info-center/training-sa2/animal-locations">Sonic levels</a> can be brought into the chao gardens</h2>
+            <h2 class="text-animal">By playing with those animals, chao obtain various <a href="https://chao-island.com/info-center/training-sa2/animals">abilities</a> and cosmetic changes</h2>
+        </div>
         <div id="animal-cards">
             <div class="card animal-card">
                 <h3 class="text-animal">Penguin</h3>
-                <p class="text-animal">Chao learns to slide on it's belly</p>
-                <p class="text-animal">Swimming ability is greatly increased</p>
-                <p class="text-animal">This is not a drill, cute belly slides</p>
+                <div class="animal-details">
+                    <p class="text-animal">Chao learns to slide on it's belly</p>
+                    <p class="text-animal">Swimming ability is greatly increased</p>
+                    <p class="text-animal">This is not a drill, cute belly slides</p>
+                </div>
                 <img src="assets/animals/animals-sa2-penguin.png" />
             </div>
             <div class="card animal-card">
                 <h3 class="text-animal">Skunk</h3>
-                <p class="text-animal">Chao has gained the power of flatulence</p>
-                <p class="text-animal">That's it. Chao can fart</p>
-                <p class="text-animal">Why did they put this in the game?</p>
+                <div class="animal-details">
+                    <p class="text-animal">Chao has gained the power of flatulence</p>
+                    <p class="text-animal">That's it. Chao can fart</p>
+                    <p class="text-animal">Why did they put this in the game?</p>
+                </div>
                 <img src="assets/animals/animals-sa2-skunk.png" />
             </div>
             <div class="card animal-card">
                 <h3 class="text-animal">Tiger</h3>
-                <p class="text-animal">Chao can now sharpen it's chao claws</p>
-                <p class="text-animal">Power (and Intimidation) are brutally increased</p>
-                <p class="text-animal">Why did they put this in the game?</p>
+                <div class="animal-details">
+                    <p class="text-animal">Chao can now sharpen it's chao claws</p>
+                    <p class="text-animal">Power (and Intimidation) are brutally increased</p>
+                    <p class="text-animal">Why did they put this in the game?</p>
+                </div>
                 <img src="assets/animals/animals-sa2-tiger.png" />
             </div>
             <div class="card animal-card">
                 <h3 class="text-animal">Bat</h3>
-                <p class="text-animal">Chao loses it's legs</p>
-                <p class="text-animal">It looks cute I promise</p>
-                <p class="text-animal">This change can be reverted</p>
+                <div class="animal-details">
+                    <p class="text-animal">Chao loses it's legs</p>
+                    <p class="text-animal">It looks cute I promise</p>
+                    <p class="text-animal">This change can be reverted</p>
+                </div>
                 <img src="assets/animals/animals-sa2-bat.png" />
             </div>
             <div class="card animal-card">
                 <h3 class="text-animal">Phoenix</h3>
-                <p class="text-animal">Chao can now shake it's tail feathers</p>
-                <p class="text-animal">Significant boost to fly and power stats</p>
-                <p class="text-animal">Look how cool this chao looks!</p>
+                <div class="animal-details">
+                    <p class="text-animal">Chao can now shake it's tail feathers</p>
+                    <p class="text-animal">Significant boost to fly and power stats</p>
+                    <p class="text-animal">Look how cool this chao looks!</p>
+                </div>
                 <img src="assets/animals/animals-sa2-phoenix.png" />
             </div>
             <div class="card animal-card">
                 <h3 class="text-animal">Half Fish</h3>
-                <p class="text-animal">Chao has it's ball replaced with a fireball</p>
-                <p class="text-animal">I repeat, your chao is now on fire</p>
-                <p class="text-animal">Listen I dunno what a half fish is supposed to be either</p>
+                <div class="animal-details">
+                    <p class="text-animal">Chao has it's ball replaced with a fireball</p>
+                    <p class="text-animal">I repeat, your chao is now on fire</p>
+                    <p class="text-animal">Listen I dunno what a half fish is supposed to be either</p>
+                </div>
                 <img src="assets/animals/animals-sa2-half-fish.png" />
             </div>
         </div>
@@ -134,8 +146,13 @@
         </section>
     </section>
     <footer id="section-footer">
-        <p class="text-footer">animal icons taken from <a href="https://chao-island.com/info-center/about-chao">chao island</a></p>
-        <a href="https://github.com/alextrush/chao-info"><i class="fa-brands fa-github"></i></a>
+        <p class="text-footer">
+            animal icons taken from 
+            <a href="https://chao-island.com/info-center/about-chao">chao island</a>
+        </p>
+        <a href="https://github.com/alextrush/chao-info">
+            <i class="fa-brands fa-github"></i>
+        </a>
     </footer>
 </body>
 </html>
