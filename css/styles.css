@@ -188,7 +188,7 @@ h1.text-gallery {
 /* ----------------------------------------- */
 
 /**
-    Button Stylings in different breakpoints
+    Button Stylings
 */
 
 /* Round out the buttons and give the text space to breathe */
@@ -202,6 +202,16 @@ input {
     background-color: rgb(65, 78, 255);
     border-color: rgb(65, 78, 255);
     color: white;
+    font-size: 0.8em;
+    border-radius: 5em;
+    padding: 0.6em;
+    width: 70%;
+}
+
+.button-about {
+    font-size: 0.8em;
+    border-radius: 5em;
+    padding: 0.6em;
 }
 
 input[type=button].button-about {
@@ -212,6 +222,7 @@ input[type=button].button-about {
     text-shadow: 2px 2px #000000;
 }
 
+/*  Desktop Button Resizing */
 @media only screen and (min-width: 768px) {
     /* button text sizing for hero banner on desktop */
     .button-main {
@@ -228,22 +239,7 @@ input[type=button].button-about {
     }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 420px) {
-    /* button text sizing for hero banner between desktop and mobile */
-    .button-main {
-        font-size: 0.8em;
-        border-radius: 5em;
-        padding: 0.6em;
-        width: 70%;
-    }
-    /* button text sizing for cards between desktop and mobile */
-    .button-about {
-        font-size: 0.8em;
-        border-radius: 5em;
-        padding: 0.6em;
-    }
-}
-
+/*  Mobile Button Resizing  */
 @media only screen and (max-width: 420px) {
     /* button text sizing for hero banner on mobile */
     .button-main {
@@ -259,6 +255,9 @@ input[type=button].button-about {
         padding: 1.1em;
     }
 }
+
+/* ----------------------------------------- */
+
 
 /**
     Background Image Positionings
@@ -316,6 +315,18 @@ input[type=button].button-about {
     border-color: rgb(231, 37, 167);;
     color: rgb(231, 37, 167);
 }
+
+#animal-cards > * {
+    background-repeat: no-repeat;
+    background-size: 800%;
+}
+
+#animal-cards >:nth-child(6n+1) {
+    background-image: linear-gradient(rgba(158, 160, 54, 0.815) 5%, rgba(158, 160, 54, 0.445) 50%, rgba(158, 160, 54, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+    border-color: rgb(233, 235, 81);
+    color: rgb(233, 235, 81);
+}
+/* ----------------------------------------- */
 
 /**
     Layout Stylings
@@ -471,6 +482,7 @@ h1#section-animal-info {
     padding: 0% 4%;
 }
 
+/*  Mobile Layout Adjustments   */
 @media only screen and (max-width: 420px) {
     .about-card {
         height: 1080px;
@@ -488,6 +500,7 @@ h1#section-animal-info {
     }
 }
 
+/*  Desktop Layout Adjustments  */
 @media only screen and (min-width: 768px) {
     /* Make cards take up a third of the screen for desktop */
     .about-card {
