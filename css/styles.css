@@ -265,7 +265,7 @@ input[type=button].button-about {
 */
 
 #section-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.7)), url("../assets/animals/about-1-tn.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.7)), url("../assets/hero.png");
     background-size: cover; 
 }
 
@@ -279,20 +279,20 @@ input[type=button].button-about {
     background-image: linear-gradient(rgb(233, 235, 81) 20%, rgb(52, 198, 255) 95%, rgb(65, 78, 255));
 }
 
-#about-cards >:nth-child(3n+1) {
-    background-image: linear-gradient(rgba(76, 149, 158, 0.747) 15%, rgba(184, 177, 104, 0.74) 45%, rgba(184, 177, 104, 0.74) 70%, rgba(76, 149, 158, 0.747) 90%), url('../assets/animals/about-1-tn.jpg');
+#about-cards >:nth-child(1) {
+    background-image: linear-gradient(rgba(76, 149, 158, 0.747) 15%, rgba(184, 177, 104, 0.74) 45%, rgba(184, 177, 104, 0.74) 70%, rgba(76, 149, 158, 0.747) 90%), url('../assets/about-1.png');
     border-color: rgb(52, 198, 255);
     color: rgb(52, 198, 255);
 }
 
-#about-cards >:nth-child(3n+2) {
-    background-image: linear-gradient(rgba(13, 20, 116, 0.726) 15%, rgba(255, 255, 255, 0.616) 45%, rgba(255, 255, 255, 0.616) 70%, rgba(13, 20, 116, 0.726) 90%), url('../assets/animals/about-1-tn.jpg');
+#about-cards >:nth-child(2) {
+    background-image: linear-gradient(rgba(13, 20, 116, 0.726) 15%, rgba(255, 255, 255, 0.616) 45%, rgba(255, 255, 255, 0.616) 70%, rgba(13, 20, 116, 0.726) 90%), url('../assets/about-2.png');
     border-color: rgb(65, 78, 255);
     color: rgb(65, 78, 255);
 }
 
-#about-cards >:nth-child(3n+3) {
-    background-image: linear-gradient(rgba(104, 10, 54, 0.596) 15%, rgba(0, 0, 0, 0.692) 45%, rgba(0, 0, 0, 0.692) 70%, rgba(104, 10, 54, 0.596) 90%), url('../assets/animals/about-1-tn.jpg');
+#about-cards >:nth-child(3) {
+    background-image: linear-gradient(rgba(104, 10, 54, 0.596) 15%, rgba(0, 0, 0, 0.692) 45%, rgba(0, 0, 0, 0.692) 70%, rgba(104, 10, 54, 0.596) 90%), url('../assets/about-3.png');
     border-color: rgb(231, 37, 167);
     color: rgb(231, 37, 167);;
 }
@@ -302,17 +302,17 @@ input[type=button].button-about {
     but I really wanted to see if I could make the complex selector work
     lo and behold it did indeed work
 */
-#about-cards >:nth-child(3n+1) .button-about {
+#about-cards >:nth-child(1) .button-about {
     border-color: rgb(52, 198, 255);
     color: rgb(52, 198, 255);
 }
 
-#about-cards >:nth-child(3n+2) .button-about {
+#about-cards >:nth-child(2) .button-about {
     border-color: rgb(65, 78, 255);
     color: rgb(65, 78, 255);
 }
 
-#about-cards >:nth-child(3n+3) .button-about {
+#about-cards >:nth-child(3) .button-about {
     border-color: rgb(231, 37, 167);
     color: rgb(231, 37, 167);
 }
@@ -321,38 +321,38 @@ input[type=button].button-about {
     background-image: linear-gradient(rgb(65, 78, 255) 5%, rgb(255, 255, 255) 95%, rgb(231, 37, 167));
 }
 
-#animal-cards >:nth-child(6n+1) {
-    background-image: linear-gradient(rgba(158, 160, 54, 0.815) 5%, rgba(158, 160, 54, 0.445) 50%, rgba(158, 160, 54, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+#animal-cards >:nth-child(1) {
+    background-image: linear-gradient(rgba(158, 160, 54, 0.815) 5%, rgba(158, 160, 54, 0.445) 50%, rgba(158, 160, 54, 0.815) 95%), url('../assets/animal-penguin.png');
     border-color: rgb(233, 235, 81);
     color: rgb(233, 235, 81);
 }
 
-#animal-cards >:nth-child(6n+2) {
-    background-image: linear-gradient(rgba(29, 80, 139, 0.815) 5%, rgba(29, 80, 139, 0.445) 50%, rgba(29, 80, 139, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+#animal-cards >:nth-child(2) {
+    background-image: linear-gradient(rgba(29, 80, 139, 0.815) 5%, rgba(29, 80, 139, 0.445) 50%, rgba(29, 80, 139, 0.815) 95%), url('../assets/animal-skunk.png');
     border-color: rgb(65, 143, 231);
     color: rgb(65, 143, 231);
 }
 
-#animal-cards >:nth-child(6n+3) {
-    background-image: linear-gradient(rgba(56, 11, 11, 0.815) 5%, rgba(56, 11, 11, 0.445) 50%, rgba(56, 11, 11, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+#animal-cards >:nth-child(3) {
+    background-image: linear-gradient(rgba(56, 11, 11, 0.815) 5%, rgba(56, 11, 11, 0.445) 50%, rgba(56, 11, 11, 0.815) 95%), url('../assets/animal-tiger.png');
     border-color: rgb(233, 39, 39);
     color: rgb(233, 39, 39);
 }
 
-#animal-cards >:nth-child(6n+4) {
-    background-image: linear-gradient(rgba(36, 9, 58, 0.815) 5%, rgba(36, 9, 58, 0.445) 50%, rgba(36, 9, 58, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+#animal-cards >:nth-child(4) {
+    background-image: linear-gradient(rgba(36, 9, 58, 0.815) 5%, rgba(36, 9, 58, 0.445) 50%, rgba(36, 9, 58, 0.815) 95%), url('../assets/animal-tiger.png');
     border-color: rgb(153, 52, 236);
     color: rgb(153, 52, 236);
 }
 
-#animal-cards >:nth-child(6n+5) {
-    background-image: linear-gradient(rgba(252, 175, 130, 0.815) 5%, rgba(252, 175, 130, 0.445) 50%, rgba(252, 175, 130, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+#animal-cards >:nth-child(5) {
+    background-image: linear-gradient(rgba(252, 175, 130, 0.815) 5%, rgba(252, 175, 130, 0.445) 50%, rgba(252, 175, 130, 0.815) 95%), url('../assets/animal-phoenix.png');
     border-color: rgb(241, 89, 1);
     color: rgb(241, 89, 1);
 }
 
-#animal-cards >:nth-child(6n+6) {
-    background-image: linear-gradient(rgba(144, 226, 96, 0.815) 5%, rgba(144, 226, 96, 0.445) 50%, rgba(144, 226, 96, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+#animal-cards >:nth-child(6) {
+    background-image: linear-gradient(rgba(144, 226, 96, 0.815) 5%, rgba(144, 226, 96, 0.445) 50%, rgba(144, 226, 96, 0.815) 95%), url('../assets/animal-half-fish.png');
     border-color: rgb(26, 184, 12);
     color: rgb(26, 184, 12);
 }
