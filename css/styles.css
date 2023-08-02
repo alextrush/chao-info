@@ -89,6 +89,7 @@ h3.text-animal {
 
 p.text-animal {
     font-family: 'Mynerve', cursive;
+    font-weight: bold;
     font-size: 0.8em;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
@@ -157,10 +158,10 @@ h1.text-gallery {
 /* Mobile */
 @media only screen and (max-width: 420px) {
     h1.text-header{
-        font-size: 0.8em;
+        font-size: 1.3em;
     }
     p.text-header {
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
     p.text-about {
         font-size: 1.6em;
@@ -264,18 +265,18 @@ input[type=button].button-about {
 */
 
 #section-header {
-    background-image: linear-gradient(rgba(47, 3, 77, 0), rgba(47, 3, 77, 0.562) 50%), url("../assets/animals/about-1-tn.jpg");
-    background-size: 400%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.7)), url("../assets/animals/about-1-tn.jpg");
+    background-size: cover; 
 }
 
-#about-cards {
-    background-size: 400%;
-    background-image: linear-gradient(rgba(76, 149, 158, 0.24) 20%, rgba(184, 177, 104, 0.247) 80%), url('../assets/animals/about-1-tn.jpg');
-}
-
-#about-cards > * {
+.card {
+    border-radius: 3%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 800%;
+}
+
+#section-about {
+    background-image: linear-gradient(rgb(233, 235, 81) 20%, rgb(52, 198, 255) 95%, rgb(65, 78, 255));
 }
 
 #about-cards >:nth-child(3n+1) {
@@ -312,19 +313,52 @@ input[type=button].button-about {
 }
 
 #about-cards >:nth-child(3n+3) .button-about {
-    border-color: rgb(231, 37, 167);;
+    border-color: rgb(231, 37, 167);
     color: rgb(231, 37, 167);
 }
 
-#animal-cards > * {
-    background-repeat: no-repeat;
-    background-size: 800%;
+#section-animal {
+    background-image: linear-gradient(rgb(65, 78, 255) 5%, rgb(255, 255, 255) 95%, rgb(231, 37, 167));
 }
 
 #animal-cards >:nth-child(6n+1) {
     background-image: linear-gradient(rgba(158, 160, 54, 0.815) 5%, rgba(158, 160, 54, 0.445) 50%, rgba(158, 160, 54, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
     border-color: rgb(233, 235, 81);
     color: rgb(233, 235, 81);
+}
+
+#animal-cards >:nth-child(6n+2) {
+    background-image: linear-gradient(rgba(29, 80, 139, 0.815) 5%, rgba(29, 80, 139, 0.445) 50%, rgba(29, 80, 139, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+    border-color: rgb(65, 143, 231);
+    color: rgb(65, 143, 231);
+}
+
+#animal-cards >:nth-child(6n+3) {
+    background-image: linear-gradient(rgba(56, 11, 11, 0.815) 5%, rgba(56, 11, 11, 0.445) 50%, rgba(56, 11, 11, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+    border-color: rgb(233, 39, 39);
+    color: rgb(233, 39, 39);
+}
+
+#animal-cards >:nth-child(6n+4) {
+    background-image: linear-gradient(rgba(36, 9, 58, 0.815) 5%, rgba(36, 9, 58, 0.445) 50%, rgba(36, 9, 58, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+    border-color: rgb(153, 52, 236);
+    color: rgb(153, 52, 236);
+}
+
+#animal-cards >:nth-child(6n+5) {
+    background-image: linear-gradient(rgba(252, 175, 130, 0.815) 5%, rgba(252, 175, 130, 0.445) 50%, rgba(252, 175, 130, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+    border-color: rgb(241, 89, 1);
+    color: rgb(241, 89, 1);
+}
+
+#animal-cards >:nth-child(6n+6) {
+    background-image: linear-gradient(rgba(144, 226, 96, 0.815) 5%, rgba(144, 226, 96, 0.445) 50%, rgba(144, 226, 96, 0.815) 95%), url('../assets/animals/about-1-tn.jpg');
+    border-color: rgb(26, 184, 12);
+    color: rgb(26, 184, 12);
+}
+
+#section-gallery {
+    background-image: linear-gradient(rgb(231, 37, 167), rgb(0,0,0));
 }
 /* ----------------------------------------- */
 
@@ -348,7 +382,6 @@ input[type=button].button-about {
     margin: 2%;
 }
 
-
 /*  Header          */
 #section-header {
     padding-top: 20%;     /* leave space for the navbar */
@@ -371,10 +404,6 @@ input[type=button].button-about {
     margin: 0% 20%;
 }
 
-.card {
-    border-radius: 3%;
-}
-
 /*  About Cards     */
 
 .about-card {
@@ -386,6 +415,11 @@ input[type=button].button-about {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+#section-animal:nth-child(1) {
+    padding-top: 10%;
+    background-color: black;
 }
 
 #about-cards {
@@ -446,7 +480,7 @@ h1#section-animal-info {
     height: 360px;
     margin: 5% 1%;
     padding: 0% 2%;
-    border: 3px outset black;   /*  This border will get overridden by other styling    */
+    border: 3px solid black;   /*  This border will get overridden by other styling    */
 }
 
 .animal-detail {
@@ -455,6 +489,11 @@ h1#section-animal-info {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+}
+
+#section-gallery {
+    display: flex;
+    flex-direction: column;
 }
 
 /*  Gallery         */
@@ -472,6 +511,7 @@ h1#section-animal-info {
     width: 28%;
     padding: 2%;
 }
+
 
 /*  Footer          */
 #section-footer {
