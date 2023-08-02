@@ -358,7 +358,7 @@ input[type=button].button-about {
 }
 
 #section-gallery {
-    background-image: linear-gradient(rgb(231, 37, 167), rgb(0,0,0));
+    background-image: linear-gradient(rgb(231, 37, 167) 10%, rgb(0,0,0) 48%, rgb(0,0,0) 99%, rgb(65, 78, 255));
 }
 /* ----------------------------------------- */
 
